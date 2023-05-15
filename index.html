@@ -1,0 +1,469 @@
+<html>
+    <head>
+        <title>Icy Quake</title>
+        <link rel="icon" href="https://www.charta-der-vielfalt.de/uploads/tx_dreipccdvdiversity/favicon_rund_180x180.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Frijole&family=Patrick+Hand&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <style>
+            *{
+                margin:0px;
+            }
+            .title{
+                display:flex;
+                justify-content: space-around;
+            }
+            .name{
+                width:42%;
+                font-size:60px;
+                font-style: oblique;
+                position:relative;
+                top:1.5vh;
+                text-align: center;
+                font-weight: bolder;
+                text-shadow: 5px 5px  rgba(150, 217, 250, 0.774);     
+                -webkit-background-clip: text;
+                -webkit-text-fill-color:rgba(7, 112, 182, 0.692);        
+            }
+            .nav{
+                width:100%;
+                height:10vh;
+                background-color: rgb(143, 68, 98);
+                display:flex;
+                justify-content: space-around;
+            }
+            .nav div{
+                position: relative;
+                top:3vh;
+            }
+            .nav a{
+                text-decoration: none;
+                font-size: larger;
+                font-weight:550;
+                color:rgb(240, 240, 221);
+            }
+            .nav a:hover{
+                text-decoration-line:underline;
+                font-size: 20px;
+            }
+            .mission{
+                width:100%;
+                height:100vh;
+                display:flex;
+                background-color: rgba(253, 237, 245, 0.744);
+            }
+            .mispic{
+                width:50%;
+                background-image:url("https://i.pinimg.com/originals/5d/73/48/5d73481a91cb55d37889bcbf5b827c06.jpg");
+                background-size: cover;
+            }
+            .miscon{
+                width:50%;
+                text-align: center;
+            }
+            .matter{
+                width:50%;
+                position:relative;
+                top:35vh;
+                left:25%;
+                text-align: center;
+            }
+            .tit{
+                color:rgba(180, 9, 109, 0.959);
+                font-size: larger;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+            
+            }
+            .subtit{
+                font-style: oblique;
+                font-family:Moon Dance;
+                font-weight: bold;
+                font-size:150%;
+                color: rgb(143, 4, 4);
+                word-spacing: 2px;
+                letter-spacing: 2px;
+            }
+            .para{
+                position:relative;
+                top:3vh;
+                font-style: oblique;
+                color:rgb(65, 75, 75);
+                font-size:15px;
+                letter-spacing:0.1px;
+                font-family:monospace;
+            }
+            .place{
+                width:100%;
+                height:100vh;
+                display: flex;
+            }
+            .placecon{
+                width:50%;
+            }
+            .placepic{
+                width:50%;
+                background-size:cover;
+
+               
+            }
+            .flavour{
+                width:100%;
+                height:100vh;
+                display:flex;
+                background-color: rgba(253, 237, 245, 0.744);
+
+            }
+            .flavourpic{
+                width:50%;
+            }
+            .flavourcon{
+                width:50%;
+            }
+            .testcon{
+                width:100%;
+                height:100vh;
+                
+            }
+            .testimonials{
+                display: flex;
+                
+            }
+            .testname{
+                width:100%;
+                text-align: center;
+                position: relative;
+                top:8vh;
+            }
+            .testname h1{
+                color:rgba(180, 9, 109, 0.959);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 250%;
+            }
+            .subtitl{
+                font-style: oblique;
+                font-family:Moon Dance;
+                font-weight: bold;
+                font-size:150%;
+                color: rgb(143, 4, 4);
+                word-spacing: 2px;
+                letter-spacing: 2px;
+                text-align: center;
+                position:relative;
+                top:8vh;   
+            }
+            .testimonialsparts{
+                display: flex;
+            }
+            .test-title{
+                text-align: center;
+                width:100%;    
+            }
+            .profile{
+                display: flex;
+                padding-bottom:2%;
+                background-color: rgba(14, 108, 202, 0.205);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .testimonial-1,.testimonial-3{
+                height: 50vh;
+                position: relative;
+                top:13vh;
+                margin: 10px;
+                background-color: rgba(253, 237, 245, 0.744); 
+                border-radius: 30% 70% 70% 30% / 30% 55% 45% 70% ;
+                box-shadow:-5px -5px 5px rgba(171, 168, 168, 0.338),5px 5px 5px rgba(117, 105, 105, 0.479);          
+            }
+            .testimonial-2,.testimonial-4{
+                height: 50vh;
+                position: relative;
+                top:24vh;
+                background-color: rgba(253, 237, 245, 0.744);
+                border-radius: 10px;
+                box-shadow:-5px -5px 5px rgba(171,168,168, 0.338),5px 5px 5px rgba(117, 105, 105, 0.479) ;  
+            }
+            .timg{
+                position:relative;
+                top:0.5vh;
+                left:10%;
+                padding: 2%;
+
+            }
+            .timg img{
+                width:50px;
+                height:50px;
+                border-radius: 50%;
+                
+            }
+            .subject{
+                width:80%;
+                position: relative;
+                top:1vh;
+                left:10%;
+                text-align:justify;
+                font-size:18px;
+                color:rgb(87, 87, 88);
+                font-family:Caveat Brush;
+                
+            }
+            .nam{
+                position:absolute;
+                top:2vh;
+                right:5%;
+                color:rgba(84, 13, 13, 0.89);
+            }
+            .star{
+                position: absolute;
+                right: 5%;
+                top:6.5vh;
+                color:rgb(181, 155, 7);
+            }
+            .gallery{
+                width:100%;
+                height:80vh;
+                background-color: rgb(223, 167, 208);
+                display: flex;
+            }
+            .footer{
+                width:100%;
+                padding-bottom: 10vh;
+                display:flex;
+                justify-content:center; 
+                background-color:rgb(143, 68, 98);
+                
+            
+            }
+            .address,.contact,.time,.follow{
+                position: relative;
+                top:10vh;
+                padding-bottom: 10vh;
+                left:2%;
+                font-size: larger;
+                color:rgb(240, 240, 221)
+                
+            }
+            .address{
+                width:23%;
+                
+            }
+            hr{
+                width:50%;
+                position:relative;
+                top:1vh;
+                border:0.1px solid rgb(163, 153, 153);
+            }
+            .contact{
+                width:30%;
+
+            }
+            .time{
+                width:20%;
+            }
+            .follow{
+                width:20%;
+            }
+            .content{
+                position:relative;
+                top:4vh;
+                color: rgb(0, 0, 0);
+                font-family:Lustria;
+                font-size:medium;
+                
+            }
+            .sun{
+                position:relative;
+                top:1vh;
+            }
+            .loc,.mob,.phn,.email,.tri,.fol{
+                color:rgb(61, 16, 1);
+                position: relative;
+                right:2.5%;
+                line-height:25px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <div class="name">Icy Quake</div>
+                <div class="logo"><img src="https://thumbs.dreamstime.com/b/attractive-vanilla-ice-cream-cartoon-design-style-playing-juggling-vector-illustration-177563322.jpg" width="120px" height="100px"/></div>
+                <div class="name">Icy Quake</div>
+            </div>
+            <div class="nav">
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="./About us.html">About us</a></div>
+                <div><a href="./menu.html">Menu</a></div>
+                <div><a href="./gallery.html">Gallery</a></div>
+                <div><a href="./book an event.html">Book an Event</a></div>
+                <div><a href="./Reviews.html">Reviews</a></div>
+                <div><a href="./locate us .html">Locate Us</a></div>
+                
+            </div>
+            <div class="mission">
+                <div class="mispic"></div>
+                <div class="miscon">
+                    <div class="matter">
+                        <div class="tit"><h1>Our Mission</h1></div>
+                        <div class="subtit">Creamylicious!</div>
+                        <div class="para"><h4>To offer our Customers, the best quality experience with the finest ingredients with the most creative and Innovative flavours...</h4></div>
+                    </div>
+                </div>
+            </div>
+            <div class="place">
+                <div class="placecon">
+                    <div class="matter">
+                        <div class="tit"><h1>Our Place</h1></div>
+                        <div class="subtit">Ice by the Sea!</div>
+                        <div class="para"><h4>The place we offer customers with a good environment and good ventilation..We serves the customers with maintaining the quality dress code and by following all the rules and regulations to satisfy the customers more... </h4></div>
+                    </div>
+                </div>
+                <div class="placepic">
+                    <img src="https://static.wixstatic.com/media/84770f_9a956bbd2dda4af5b1ec35c35d26c07b~mv2_d_3840_2160_s_2.jpg/v1/fill/w_906,h_975,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_9a956bbd2dda4af5b1ec35c35d26c07b~mv2_d_3840_2160_s_2.jpg" width="100%" height="100%"/>
+                </div>
+            </div>
+            <div class="flavour">
+                <div class="flavourpic">
+                    <img src="https://i.pinimg.com/originals/a7/c9/44/a7c9444a3074165929a69d9ce5e51173.jpg" width="100%" height="100%"/>
+                </div>
+                <div class="flavourcon">
+                    <div class="matter">
+                        <div class="tit"><h1>Our Flavours</h1></div>
+                        <div class="subtit">Fresh n' Tasty! </div>
+                        <div class="para"><h4>We offer different types of flavours which are unique...The ingredinets we use are of natural and innovative flavours with highy quality...</h4></div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="testcon">
+                <div class="testname"><h1>Testimonials</h1></div>
+                <div class="subtitl">Hearts from customer's!</div>
+                <div class="testimonials">
+                        <div class="testimonial-1">
+                            <div class="profile">
+                                <div class="timg"><img src="./th.jfif"/></div>
+                            <div>   
+                                <div class="nam"><h2>Onkar</h2></div>
+                                <div class="star">
+                                    <i class=" fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>   
+                                </div>
+                            </div> 
+                            </div> 
+                            <div class="subject"><p>Hello everyone, I visited this Icy Quake parlour with my friends. The facilities were quiet good. The management was friendly in nature. The flavours were of unique taste with good quality..The prices are of satisfactory. </p></div>
+                        </div>
+                        <div class="testimonial-2">
+                           <div class="profile">
+                                <div class="timg"><img src="./icon.jfif"/></div>
+                            <div>  
+                                <div class="nam"><h2>Piyush</h2></div>
+                                <div class="star">
+                                    <i class=" fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>  
+                                </div>
+                            </div>
+                           </div>
+                            <div class="subject"><p>It was very comfortable to spend the time in Icy Quake and I tasted different shakes and ice-creams. The taste was like Awesome, I enjoyed alot by their special flavours. I want to visit for many times.. </p></div>
+                        </div>
+                        <div class="testimonial-3">
+                            <div class="profile">
+                                <div class="timg"><img src="./th.jfif"/></div>
+                            <div>
+                                <div class="nam"><h2>Anshul</h2></div>
+                                <div class="star">
+                                    <i class=" fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>  
+                            </div>
+                            </div>
+                            <div class="subject"><p>I spent some time in Icy Quake, it was really good to see a parlour with variety of delicious items. The flavours are of very innovative and creative to see. Try once you will never forget this taste again.  </p></div>
+                        </div>
+                        <div class="testimonial-4">
+                            <div class="profile">
+                                <div class="timg"><img src="./icon.jfif"/></div>
+                            </div>
+                            <div class="nam"><h2>Prince</h2></div>
+                            <div class="star">
+                                <i class=" fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>  
+                            <div class="subject"><p>Hai,Iam Sreekanth, recently I went to Icy Quake parlour. Their interior ambience was pretty good. The tastes were very unique and tasty. Visit once you will visit next time automatically for sure.</p></div>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="address col-sm-3">
+                    <div><h2>Address</h2></div>
+                    <div><hr/></div>
+                    <div class="content">
+                       <div><p><i class="loc fa-solid fa-location-dot"></i><span>Old madivala 2nd main road Bangalore 560008</span></p></div>
+                    </div>
+                </div>
+                <div class="contact col-sm-3">
+                    <div><h2>Contact</h2></div>
+                    <div><hr/></div>
+                    <div class="content">
+                        <div><i class="mob fa-solid fa-mobile"></i>+91 6200 503 229</div>
+                        <div><i class="phn fa-solid fa-phone"></i>0860-456 678</div>
+                        <div><i class="email fa-solid fa-envelope"></i>shankarsumit49@gmail.com</div>
+                    </div>
+                </div>
+                <div class="time col-sm-3">
+                    <div><h2>Timings</h2></div>
+                    <div><hr/></div>
+                    <div class="content">
+                        <div>
+                            <i class="tri fa-solid fa-caret-right"></i><b>(Mon-Sat)</b><br/>
+                            Opens at 9:00AM<br/>
+                            Closes at 10:00PM
+                        </div>
+                        <div class="sun">
+                            <p>
+                                <i class="tri fa-solid fa-caret-right"></i><b>(Sunday)</b><br/>
+                                Opens at 11:00AM<br/>
+                                Closes at 7:00PM
+                            </p>
+                        </div>        
+                    </div>
+                </div>  
+                <div class="follow col-sm-3">
+                    <div><h2>Follow Us</h2></div>
+                    <div><hr/></div>
+                    <div class="content">
+                        <i class="fol fa-brands fa-facebook"></i> facebook<br/>
+                        <i class="fol fa-brands fa-instagram"></i> Instagram<br/>
+                        <i class="fol fa-brands fa-twitter"></i> Twitter
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
